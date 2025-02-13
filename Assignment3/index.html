@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="Thanks.html">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="pass">Password: </label>
+            <input type="password">
+        </div>
+
+        <div>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+        </div>
+
+        <div>
+            <label for="hobbies">Hobbies:</label>
+            <br>
+            <input type="checkbox" id="reading">
+            <label for="reading">Reading</label>
+            <br>
+            <input type="checkbox" id="traveling">
+            <label for="traveling">Traveling</label>
+            <br>
+            <input type="checkbox" id="cooking">
+            <label for="cooking">Cooking</label>
+            <br>
+            <input type="checkbox" id="sports">
+            <label for="sports">Sports</label>
+        </div>
+
+        <div>
+            <label for="city">City: </label>
+            <select id="city">
+                <option value="">Select your city</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Pune">Pune</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob">
+        </div>
+
+        <div>
+            <label for="pno">Phone Number: </label>
+            <input type="tel" maxlength="10" id="pno" placeholder="10-digit-number">
+        </div>
+
+        <div>
+            <label for="addr">Address: </label>
+            <br>
+            <textarea id="addr" placeholder="Enter you address" rows="5" cols="50"></textarea>
+        </div>
+
+        <div>
+            <button value="submit">Submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
