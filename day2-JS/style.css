@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;  */
+}
+h1{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.div{
+    border: 6px solid rebeccapurple;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
