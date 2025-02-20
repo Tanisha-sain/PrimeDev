@@ -39,3 +39,10 @@ const newArr = arr.reduce((acc, ele) => {
 }, [])
 console.log(newArr);
 
+// indexOf Method
+// let array = [[1,2], [3, 4], [5, 6]];
+// console.log(array.indexOf([1,2]));
+let array = [1, 2, 3, 4];
+console.log(array.indexOf(4));
+console.log(array.indexOf(6));
+
