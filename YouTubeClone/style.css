@@ -1,39 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 6.25rem auto;
-    grid-template-columns: 200px 1fr;
-  }
-  header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    background-color: yellow ;
-    grid-column: 1/3;
-  }
-  aside{
-    background-color: aquamarine;
-  }
-  main{
-    background-color: blueviolet;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,20rem);
-    grid-auto-rows: auto;
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
-    /* overflow: scroll; */
-    /* align-content: center; */
-  }
-  .card{
-    background-color: antiquewhite;
-  }
-  .card img{
-    overflow: hidden;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboto',sans-serif;
+}
+body{
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 4rem auto;
+  grid-template-columns: 15rem 1fr;
+}
+main, #iframe-container{
+  background-color: #0f0e0e;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,25rem);
+  grid-auto-rows: auto;
+  gap: 2rem 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+.card{
+  background-color: #0f0e0e;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card>img{
+  border-radius:15px;
+}
+.card img:hover{
+  transform: scale(.95);
+}
+.text-container{
+  margin-top: .5rem;
+  display: flex;
+  gap: 1rem;
+}
+.text-container img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.text-container p{
+  opacity: .5;
+}
+
+header{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #0f0e0e;
+  grid-column: 1/3;
+  padding: 1rem 0;
+}
+header>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+header>div:nth-child(2){
+  width: auto;
+  flex: auto;
+  max-width: 50vw;
+}
+header input{
+  padding: .75rem ;
+  width: 80%;
+  border-radius: 20px 0px 0px 20px;
+  background-color: transparent;
+  border: 1px solid #ffffff33;
+  color: white;
+}
+header i{
+  font-size: 1.5rem;
+  font-weight: 100;
+  background-color: #222;
+  padding: .75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header i:hover{
+  background-color: #444;
+}
+header .create{
+  border-radius: 40px;
+  padding: .75rem;
+  background-color: #222;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+header button{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+sup{
+  opacity: .5;
+}
+.fa-magnifying-glass{
+  margin-left: -1rem;
+  padding: .66rem 1rem;
+  padding-right:2rem ;
+ border-radius: 0px 20px 20px 0px;
+}
+.fa-youtube , .fa-bars{
+  background-color: transparent;
+}
+.fa-youtube span{
+  color: #fff;
+}
+
+/* sidebar */
+aside{
+  color: #fff;
+  padding: 1rem;
+  background-color: #0f0e0e;
+  /* height: calc(100vh - 4rem);
+  position: fixed;
+  overflow: scroll ; */
+}
+aside a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1rem;
+}
+aside ul{
+  padding: 1rem 0;
+}
+aside ul li{
+  font-weight: 300;
+  padding: .75rem 0.5rem;
+  list-style-type: none;
+  border-radius: 10px;
+}
+aside ul li:hover{
+  background-color: #222;
+}
+aside hr{
+  opacity: .25;
+}
+aside h4{
+  margin-top: 1rem;
+}
+aside p{
+  margin-top:1rem ;
+  opacity: .5;
+}
+section{
+  background-color: #0f0e0e;
+}
+section h1{
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+/* video.html */
+.video-container{
+  color: white;
+  background-color: #0f0e0e;
+  padding: 1rem;
+}
+.video-container iframe{
+  margin: 1rem 0;
+  width: 100%;
+  height: 70vh;
+}
+.video-container .comments textarea{
+  color: white;
+  resize: none;
+  width: 70vw;
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff5c;
+  margin: 1rem 0;
+}
+.video-container .comments textarea:focus{
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+.video-container .comments button{
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  background-color: #222;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.video-container .comments button:hover{
+  background-color: #666;
+}

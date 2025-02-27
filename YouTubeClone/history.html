@@ -4,21 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="./index.html">HOME</a>
-    <div id="iframe-container"></div>
+    <header>
+      <div>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-brands fa-youtube" style="color: #cf1717">
+          <span>YouTube <sup>IN</sup></span>
+        </i>
+      </div>
+      <div>
+        <input type="text" name="search-text" />
+        <button onclick="handleSearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <i class="fa-solid fa-microphone"></i>
+      </div>
+      <div>
+        <button class="create">+ Create</button>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-regular fa-bell"></i>
+      </div>
+    </header>
+
+    <aside>
+      <ul>
+        <li><i class="fa-solid fa-house"></i><a href="./index.html">Home</a></li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">Shorts</a></li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">Subscriptions</a></li>
+      </ul>
+      <hr />
+      <h4>You ></h4>
+      <ul>
+        <li>
+          <i class="fa-solid fa-clock-rotate-left"></i
+          >
+          <a href="./history.html">History</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-play"></i>
+          <a href="#">Playlist</a></li>
+        <li>
+          <i class="fa-solid fa-video"></i>
+          <a href="#">Your videos</a></li>
+        <li>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <a href="#">Your courses</a></li>
+        <li>
+          <i class="fa-regular fa-clock"></i>
+          <a href="#">Watch later</a></li>
+        <li>
+          <i class="fa-regular fa-thumbs-up"></i>
+          <a href="#">Liked videos</a></li>
+        <li>
+          <i class="fa-solid fa-download"></i>
+          <a href="#">Downloads</a></li>
+      </ul>
+      <hr />
+      <h4>Subscriptions</h4>
+      <ul></ul>
+      <hr />
+      <h4>Explore</h4>
+      <ul>
+        <li>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <a href="#">Trending</a></li>
+        <li>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="#">Shopping</a></li>
+        <li>
+          <i class="fa-solid fa-music"></i>
+          <a href="#">Music</a></li>
+        <li>
+          <i class="fa-solid fa-film"></i>
+          <a href="#">Movies</a></li>
+        <li>
+          <i class="fa-solid fa-headset"></i>
+          <a href="#">Live</a></li>
+        <li>
+          <i class="fa-solid fa-gamepad"></i>
+          <a href="#">Gaming</a></li>
+        <li>
+          <i class="fa-solid fa-newspaper"></i>
+          <a href="#">News</a></li>
+        <li>
+          <i class="fa-solid fa-trophy"></i>
+          <a href="#">Sports</a></li>
+        <li>
+          <i class="fa-solid fa-graduation-cap"></i>
+          <a href="#">Courses</a></li>
+        <li>
+          <i class="fa-solid fa-shirt"></i>
+          <a href="#">Fashion & Beauty</a></li>
+        <li>
+          <i class="fa-solid fa-podcast"></i>
+          <a href="#">Podcats</a></li>
+      </ul>
+      <hr />
+      <h4>More from YouTube</h4>
+      <ul>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">YouTube Premium</a></li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">YouTube Studio</a></li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">YouTube Music</a></li>
+        <li>
+          <i class="fa-brands fa-youtube" style="color: #cf1717"></i>
+          <a href="#">YouTube Kids</a></li>
+      </ul>
+      <hr />
+      <ul>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <a href="#">Settings</a></li>
+        <li>
+          <i class="fa-solid fa-flag"></i>
+          <a href="#">Report history</a></li>
+        <li>
+          <i class="fa-regular fa-circle-question"></i>
+          <a href="#">Help</a></li>
+        <li>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <a href="#">Send feedback</a></li>
+      </ul>
+      <hr />
+        <p>About Press Copyright Contact us Creators Advertise Developers</p>
+        <p>
+          Terms Privacy Policy & Safety How YouTube works Test new features
+        </p>
+        <p>© 2025 Google LLC</p>
+    </aside>
+
+    <!-- <main></main> -->
+     <section>
+      <h1>Watch History</h1>
+      <div id="iframe-container">
+      </div>
+     </section>
+    
+
+    <!-- <script src="script.js"></script> -->
+
     <script>
       const historyText = localStorage.getItem("yt_history");
       const historyArray = JSON.parse(historyText).reverse();
       const root = document.getElementById("iframe-container");
       historyArray.forEach((videoId) => {
         const newCard = document.createElement("div");
+        newCard.className="card";
         newCard.innerHTML = `
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `;
         root.appendChild(newCard);
       });
     </script>
+
+    <script
+    src="https://kit.fontawesome.com/d4b73298dc.js"
+    crossorigin="anonymous"
+    ></script>
+
   </body>
 </html>
