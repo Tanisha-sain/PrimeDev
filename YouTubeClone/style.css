@@ -77,6 +77,7 @@ header input{
   background-color: transparent;
   border: 1px solid #ffffff33;
   color: white;
+  outline: none;
 }
 header i{
   font-size: 1.5rem;
@@ -118,6 +119,7 @@ sup{
 .fa-youtube span{
   color: #fff;
 }
+
 
 /* sidebar */
 aside{
@@ -199,4 +201,17 @@ section h1{
 }
 .video-container .comments button:hover{
   background-color: #666;
+}
+
+#commentBox{
+  width: 100%;
+  border: 1px solid white;
+  margin-top: 1rem;
+}
+.comm{
+  width: 98%;
+  background-color: rgb(67, 63, 63);
+  border-radius: 0.8rem;
+  padding: 0.5rem 1rem;
+  margin: 0.8rem auto;
 }

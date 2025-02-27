@@ -156,7 +156,7 @@
 
     <script>
       const historyText = localStorage.getItem("yt_history");
-      const historyArray = JSON.parse(historyText).reverse();
+      const historyArray = JSON.parse(historyText || "[]").reverse();
       const root = document.getElementById("iframe-container");
       historyArray.forEach((videoId) => {
         const newCard = document.createElement("div");

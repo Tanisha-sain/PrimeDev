@@ -1,22 +1,3 @@
-// const getData = () => {
-//   const res = fetch("https://youtube138.p.rapidapi.com/v2/trending", {
-//     method: "GET",//optional :: default is "GET"
-//     headers: {// for including headers
-//       "x-rapidapi-host": "youtube138.p.rapidapi.com",
-//       "x-rapidapi-key":"69153dd839msha76ccede3a8c8aap1d3966jsned16456981aa",
-//     }
-//   });
-//   res.then((res) => {
-//     const pr2 = res.json();
-//     pr2.then((data) => {
-//       console.log(data);
-//     })
-//   }).catch((err) => {
-//     alert(err.message);
-//   })
-// }
-//getData();
-
 const dummyData = [
     {
       "type": "video",
@@ -5720,15 +5701,18 @@ const dummyData = [
     }
   ];
   
+// Showing videos on the screen
+
   const root = document.querySelector('main');
   const showUI = (list) => {
+    root.innerHTML = "";
     list.forEach((obj,idx) => {
+      // console.log(obj);
       const newCard = document.createElement('div');
       newCard.className = 'card';
       newCard.innerHTML = `
       <img
-      src="${obj.videoThumbnails[1].url}" width="100%" id='${idx}' 
-      onmouseover='handleHover(event,${idx})'>
+      src="${obj.videoThumbnails[1].url}" width="100%" id='${idx}'>
       <h6>${obj.author}</h6>
       <h4>${obj.title}</h4>
       `;
@@ -5739,13 +5723,27 @@ const dummyData = [
     })
   };
   
-  const handleHover = (e, idx) => {
-    const lastImg = dummyData[idx].videoThumbnails.pop();
-    e.target.src = lastImg.url;
-  }
   
+  // const handleHover = (e, idx) => {
+  //   console.log(dummyData[idx].videoThumbnails)
+  //   // const lastImg = dummyData[idx].videoThumbnails;
+  //   // e.target.src = lastImg.url;
+  // }
+ 
+
+// Handling search funcitonality
+
+
+  const input = document.querySelector("input");
   const handleSearch = (e) => {
-    window.open(`./search.html?text=${e.target.value}`);
+    // console.log(input.value);
+    const val = input.value;
+    input.value = "";
+    if(val){
+      const searchedData = dummyData.filter((data) => data.title.toLowerCase().includes(val.toLowerCase()));
+      console.log(searchedData)
+      showUI(searchedData);
+    }
   }
   
   showUI(dummyData);
