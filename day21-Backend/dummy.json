@@ -1,0 +1,153 @@
+[
+    {
+      "title": "Amul Butter 500g",
+      "price": 275,
+      "stock": 20,
+      "tags": ["dairy", "butter", "amul"]
+    },
+    {
+      "title": "Tata Salt 1kg",
+      "price": 28,
+      "stock": 50,
+      "tags": ["salt", "grocery", "tata"]
+    },
+    {
+      "title": "Parle-G Biscuits Pack",
+      "price": 10,
+      "stock": 100,
+      "tags": ["biscuits", "snacks", "parle"]
+    },
+    {
+      "title": "Aashirvaad Atta 5kg",
+      "price": 235,
+      "stock": 30,
+      "tags": ["atta", "wheat", "flour"]
+    },
+    {
+      "title": "Colgate Toothpaste 200g",
+      "price": 110,
+      "stock": 40,
+      "tags": ["toothpaste", "oral care"]
+    },
+    {
+      "title": "Dabur Honey 250g",
+      "price": 120,
+      "stock": 25,
+      "tags": ["honey", "dabur", "health"]
+    },
+    {
+      "title": "Maggi 2-Minute Noodles Pack of 4",
+      "price": 52,
+      "stock": 80,
+      "tags": ["noodles", "maggi", "instant food"]
+    },
+    {
+      "title": "Surf Excel Detergent 1kg",
+      "price": 220,
+      "stock": 35,
+      "tags": ["detergent", "cleaning", "laundry"]
+    },
+    {
+      "title": "Pepsi 750ml Bottle",
+      "price": 40,
+      "stock": 60,
+      "tags": ["beverages", "soft drink"]
+    },
+    {
+      "title": "Kissan Tomato Ketchup 500g",
+      "price": 105,
+      "stock": 45,
+      "tags": ["sauce", "ketchup", "kissan"]
+    },
+    {
+      "title": "Harpic Toilet Cleaner 500ml",
+      "price": 95,
+      "stock": 30,
+      "tags": ["cleaning", "toilet", "harpic"]
+    },
+    {
+      "title": "Lays Classic Salted 52g",
+      "price": 20,
+      "stock": 70,
+      "tags": ["snacks", "chips", "lays"]
+    },
+    {
+      "title": "Nestle Everyday Milk Powder 400g",
+      "price": 190,
+      "stock": 25,
+      "tags": ["milk", "nestle", "powder"]
+    },
+    {
+      "title": "Bournvita Health Drink 500g",
+      "price": 250,
+      "stock": 15,
+      "tags": ["health", "drink", "bournvita"]
+    },
+    {
+      "title": "Britannia Cheese Slices Pack of 10",
+      "price": 120,
+      "stock": 20,
+      "tags": ["cheese", "britannia", "dairy"]
+    },
+    {
+      "title": "Dettol Handwash 200ml",
+      "price": 60,
+      "stock": 50,
+      "tags": ["hygiene", "dettol", "handwash"]
+    },
+    {
+      "title": "Patanjali Aloe Vera Gel 150ml",
+      "price": 80,
+      "stock": 18,
+      "tags": ["skincare", "aloe vera", "patanjali"]
+    },
+    {
+      "title": "Fortune Sunflower Oil 1L",
+      "price": 130,
+      "stock": 25,
+      "tags": ["cooking oil", "sunflower", "fortune"]
+    },
+    {
+      "title": "Tide Detergent Bar 250g",
+      "price": 20,
+      "stock": 100,
+      "tags": ["laundry", "bar", "tide"]
+    },
+    {
+      "title": "Good Day Cashew Cookies 200g",
+      "price": 35,
+      "stock": 40,
+      "tags": ["biscuits", "cookies", "good day"]
+    },
+    {
+      "title": "Nivea Men Face Wash 100ml",
+      "price": 199,
+      "stock": 15,
+      "tags": ["nivea", "face wash", "men"]
+    },
+    {
+      "title": "Real Mixed Fruit Juice 1L",
+      "price": 110,
+      "stock": 22,
+      "tags": ["juice", "real", "beverages"]
+    },
+    {
+      "title": "Clinic Plus Shampoo 340ml",
+      "price": 175,
+      "stock": 19,
+      "tags": ["shampoo", "clinic plus", "hair care"]
+    },
+    {
+      "title": "Lifebuoy Soap 125g",
+      "price": 35,
+      "stock": 60,
+      "tags": ["soap", "lifebuoy", "hygiene"]
+    },
+    {
+      "title": "Eveready LED Bulb 9W",
+      "price": 130,
+      "stock": 28,
+      "tags": ["electronics", "led", "bulb"]
+    }
+  ]
+  
